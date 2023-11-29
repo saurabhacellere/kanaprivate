@@ -478,7 +478,7 @@ public class KanaConverter
 
     protected static final Map<Character, Character> MAPPING_HANKAKU_DIACRITIC_SUFFIXES;
     static {
-        MAPPING_HANKAKU_DIACRITIC_SUFFIXES = new HashMap<Character, Character>();
+       // MAPPING_HANKAKU_DIACRITIC_SUFFIXES = new HashMap<Character, Character>();
         MAPPING_HANKAKU_DIACRITIC_SUFFIXES.put('ヴ', HANKAKU_VOICED_MARK);
         MAPPING_HANKAKU_DIACRITIC_SUFFIXES.put('ガ', HANKAKU_VOICED_MARK);
         MAPPING_HANKAKU_DIACRITIC_SUFFIXES.put('ギ', HANKAKU_VOICED_MARK);
