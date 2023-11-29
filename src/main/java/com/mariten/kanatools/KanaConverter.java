@@ -346,7 +346,7 @@ public class KanaConverter
 
     protected static final Map<Character, Character> MAPPING_HANKAKU_TO_ZENKAKU_KATAKANA_VOICED;
     static {
-        MAPPING_HANKAKU_TO_ZENKAKU_KATAKANA_VOICED = new HashMap<Character, Character>();
+       // MAPPING_HANKAKU_TO_ZENKAKU_KATAKANA_VOICED = new HashMap<Character, Character>();
         MAPPING_HANKAKU_TO_ZENKAKU_KATAKANA_VOICED.put('ｶ', 'ガ');
         MAPPING_HANKAKU_TO_ZENKAKU_KATAKANA_VOICED.put('ｷ', 'ギ');
         MAPPING_HANKAKU_TO_ZENKAKU_KATAKANA_VOICED.put('ｸ', 'グ');
