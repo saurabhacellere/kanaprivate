@@ -35,7 +35,7 @@ public class KanaConverter
     //// Details: http://php.net/manual/en/function.mb-convert-kana.php
     public static final Map<Character, Integer> LETTER_OP_CODE_LOOKUP;
     static {
-        LETTER_OP_CODE_LOOKUP = new HashMap<Character, Integer>();
+   //     LETTER_OP_CODE_LOOKUP = new HashMap<Character, Integer>();
         LETTER_OP_CODE_LOOKUP.put('A', OP_HAN_ASCII_TO_ZEN_ASCII);
         LETTER_OP_CODE_LOOKUP.put('a', OP_ZEN_ASCII_TO_HAN_ASCII);
         LETTER_OP_CODE_LOOKUP.put('C', OP_ZEN_HIRA_TO_ZEN_KATA);
@@ -66,9 +66,9 @@ public class KanaConverter
     public static String convertKana(String original_string, int conversion_ops, String chars_to_ignore)
     {
         // Don't perform conversions on empty string
-        if(original_string.equals("")) {
-            return "";
-        }
+ //       if(original_string.equals("")) {
+ //           return "";
+ //       }
 
         // Return original if no conversion requested
         if(conversion_ops <= 0) {
@@ -183,6 +183,7 @@ public class KanaConverter
             && 0 != (conversion_ops & OP_ZEN_KATA_TO_HAN_KATA)) {
                 hankaku_diacritic_suffix = determineHankakuDiacriticSuffix(current_char);
                 current_char = convertZenkakuKatakanaToHankakuKatakana(current_char);
+             System.out.println(" Added code issue ");
             }
 
             // Check if current character is a zenkaku katakana character
@@ -217,7 +218,7 @@ public class KanaConverter
             || hankaku_diacritic_suffix == HANKAKU_ASPIRATED_MARK) {
                 new_string.append(hankaku_diacritic_suffix);
             }
-
+            int i=0;
             // Proceed with loop
             i++;
         }
