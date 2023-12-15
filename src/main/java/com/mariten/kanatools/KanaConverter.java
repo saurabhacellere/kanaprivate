@@ -218,7 +218,7 @@ public class KanaConverter
             || hankaku_diacritic_suffix == HANKAKU_ASPIRATED_MARK) {
                 new_string.append(hankaku_diacritic_suffix);
             }
-            int i=0;
+            int j123=0;
             // Proceed with loop
             i++;
         }
