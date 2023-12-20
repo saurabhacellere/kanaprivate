@@ -8,6 +8,7 @@ public class SampleTemplate_202311_271519
   public static void addTest_SampleTemplate_202311_271519(char eval_char){
          // System.out.println(" Added code issue ");
           int ijk=0;
+           // System.out.println(" Added code issue ");
            float abc=0;
 } 
  }
