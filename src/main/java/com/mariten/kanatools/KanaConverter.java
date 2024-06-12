@@ -65,6 +65,7 @@ public class KanaConverter
       */
     public static String convertKana(String original_string, int conversion_ops, String chars_to_ignore)
     {
+        int ijk;
         // Don't perform conversions on empty string
  //       if(original_string.equals("")) {
  //           return "";
